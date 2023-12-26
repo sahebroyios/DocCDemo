@@ -5,8 +5,8 @@ xcrun xcodebuild build CODE_SIGN_IDENTITY="" CODE_SIGNING_REQUIRED=NO docbuild \
     -derivedDataPath "$PWD/.derivedData"
 
 xcrun docc process-archive transform-for-static-hosting \
-    "$PWD/.derivedData/Build/Products/Debug-iphonesimulator/DocCPublisherDemo.doccarchive" \
+    "$PWD/.derivedData/Build/Products/Debug-iphonesimulator/DocCPublisher.doccarchive" \
     --output-path ".docs" \
     --hosting-base-path "DocCDemo"
     
-echo '<script>window.location.href += "/documentation/doccpublisherdemo"</script>' > .docs/index.html
+echo '<script>window.location.href += "/documentation/doccpublisher"</script>' > .docs/index.html
