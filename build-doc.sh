@@ -1,6 +1,6 @@
 cd DocCPublisher
 xcrun xcodebuild build CODE_SIGN_IDENTITY="" CODE_SIGNING_REQUIRED=NO docbuild \
-    -scheme DocCPublisherDemo \
+    -scheme DocCPublisher \
     -destination 'generic/platform=iOS Simulator' \
     -derivedDataPath "$PWD/.derivedData"
 
